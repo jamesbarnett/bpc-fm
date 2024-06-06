@@ -11,12 +11,7 @@
   --font-family-regular: Figtree, sans-serif;
   --fw-regular: 500;
   --fw-bold: 800;
-  /*--fs-normal: clamp(0.8125rem, -0.2632rem + 5.2632vw, 1rem); */
-  /*--fs-normal: clamp(0.875rem, 0.5951rem + 1.4925vw, 1rem);*/
-  /*--fs-normal: clamp(0.8125rem, 0.7063rem + 0.3916vw, 1rem);*/
   --fs-normal: clamp(0.625rem, 0.25rem + 2.6667vw, 1rem);
-  /*--fs-normal: clamp(0.625rem, 0.2213rem + 2.8708vw, 1rem);*/
-  /*--fs-normal: 16px;*/
   --fs-smaller: calc(0.875 * var(--fs-normal));
   --fs-larger: calc(1.5 * var(--fs-normal));
   --ds-x: 0.5rem;
@@ -122,16 +117,22 @@ body {
   grid-template-columns: 1fr;
   padding-top: 1.5rem;
   place-content: center;
-  width: calc(24 * var(--fs-normal)); /*24rem;*/
+  width: calc(24 * var(--fs-normal)); /* 24rem */
   border: 1px solid var(--clr-neutral-3);
   filter: drop-shadow(var(--ds-x) var(--ds-y) var(--clr-neutral-3));
 }
 
+.grid:has(a:hover) {
+  filter: drop-shadow(
+    calc(var(--ds-x) * 2) calc(var(--ds-y) * 2) var(--clr-neutral-3)
+  );
+}
+
 .course-information {
   display: grid;
-  /*border: 3px solid red;*/
-  width: 21rem;
   margin: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   --padding-sides-callout: 0.8rem;
   --padding-bottom-callout: 0.45rem;
   --padding-top-callout: 0.4rem;
@@ -144,7 +145,6 @@ body {
 
 .concept-image {
   width: 100%;
-  /*width: 20.5rem;*/
   margin: 0 auto 1rem auto;
   border-radius: 0.5rem;
 }
@@ -152,7 +152,7 @@ body {
 .callout {
   background-color: var(--clr-primary);
   padding: var(--padding-top-callout) var(--padding-sides-callout)
-           var(--padding-bottom-callout) var(--padding-sides-callout);
+    var(--padding-bottom-callout) var(--padding-sides-callout);
   font-weight: var(--fw-bold);
   font-size: var(--fs-smaller);
   border-radius: 0.25rem;
@@ -195,8 +195,8 @@ body {
 .course-instructor p {
   margin-left: 0.75rem;
 }
+
 .instructor-image {
   height: 2rem;
   width: 2rem;
 }
-

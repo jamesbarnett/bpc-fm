@@ -127,9 +127,9 @@ body {
 .course-information {
   display: grid;
   margin: auto;
-  --padding-top-callout:  0.1rem; 
-  --padding-sides-callout:  0.8rem;
-  --padding-bottom-callout: 0.3rem;
+  --padding-top-callout:  0.2rem; 
+  --padding-sides-callout:  0.7rem;
+  --padding-bottom-callout: 0.4rem;
   width: calc(100% - 2.9rem);
   align-items: center;
 }
@@ -159,7 +159,7 @@ body {
 }
 .course-summary {
   color: var(--clr-neutral-2);
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.2rem;
 }
 
 .course-title {
@@ -171,7 +171,6 @@ body {
 .course-title a {
   color: var(--clr-neutral-3);
   text-decoration: none;
-  line-height: 1.7;
 }
 
 .course-title a:hover {
@@ -183,14 +182,17 @@ body {
   font-weight: var(--fw-bold);
   font-size: var(--fs-300);
   display: flex;
-  align-items: center;
+  padding-top: 0.4rem;
+  align-items: start;
 }
 
 .course-instructor p {
   margin-left: 0.75rem;
+  margin-top: 0.4rem;
 }
 
 .instructor-image {
   height: 2rem;
   width: 2rem;
+  margin-bottom: 0.2rem;
 }

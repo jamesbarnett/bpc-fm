@@ -147,19 +147,18 @@ body {
   font-weight: var(--fw-bold);
   font-size: var(--fs-300);
   border-radius: 0.25rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   width: 9ch;
 }
 
 .course-published {
-  line-height: 1.5;
-  margin-top: 0.4rem;
+  margin-top: 0.6rem;
   font-size: var(--fs-300);
   margin-bottom: 0.75rem;
 }
 .course-summary {
   color: var(--clr-neutral-2);
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .course-title {
@@ -178,7 +177,7 @@ body {
 }
 
 .course-instructor {
-  margin-bottom: 1.0rem;
+  margin-bottom: 0.75rem;
   font-weight: var(--fw-bold);
   font-size: var(--fs-300);
   display: flex;
@@ -188,7 +187,7 @@ body {
 
 .course-instructor p {
   margin-left: 0.75rem;
-  margin-top: 0.4rem;
+  margin-top: 0.25rem;
 }
 
 .instructor-image {

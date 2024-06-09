@@ -176,24 +176,23 @@ body {
   color: var(--clr-primary);
 }
 
-.course-instructor {
-  margin-bottom: 0.75rem;
+.instructor-info {
+  display: grid;
   font-weight: var(--fw-bold);
   font-size: var(--fs-300);
   display: flex;
-  padding-top: 0.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
   align-items: start;
 }
 
-.course-instructor p {
-  margin-left: 0.75rem;
+.course-instructor {
+  padding-left: 0.70rem;
   padding-top: 0.3rem;
 }
 
 .instructor-image {
-  margin-top: 0.1rem;
   height: 2rem;
   width: 2rem;
-  margin-bottom: 0.1rem;
 }
 

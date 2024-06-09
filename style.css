@@ -187,11 +187,13 @@ body {
 
 .course-instructor p {
   margin-left: 0.75rem;
-  margin-top: 0.25rem;
+  padding-top: 0.4rem;
 }
 
 .instructor-image {
+  margin-top: 0.1rem;
   height: 2rem;
   width: 2rem;
   margin-bottom: 0.2rem;
 }
+
